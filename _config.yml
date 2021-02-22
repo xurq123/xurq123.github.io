@@ -2,14 +2,12 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Your Name
-email: you@example.com
+title: TPChina
+email: 
 description: > # this means to ignore newlines until "url:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  中国定理证明社区
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
 url:  # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
@@ -36,7 +34,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # your GitHub user name
+github_username: tpchina # your GitHub user name
 twitter_username: # your Twitter handle
 linkedin_username: # your LinkedIn user name
 scholar_userid: # your Google Scholar ID
@@ -56,8 +54,8 @@ google_analytics: UA-XXXXXXXXX # out your google-analytics code
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio  # your blog must have a name for it to show up in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_name: TPChina  # your blog must have a name for it to show up in the nav bar
+blog_description: 
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -102,7 +100,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ['_pages']
+include: ['_pages', '_atp', '_itp']
 exclude: [vendor]
 
 # Plug-ins
@@ -120,13 +118,13 @@ plugins:
 
 scholar:
 
-  last_name: Einstein
+  last_name: None
 
   style: apa
   locale: en
 
-  sort_by: year
-  order: descending
+  # sort_by: year
+  # order: descending
 
   source: /_bibliography/
   bibliography: papers.bib
